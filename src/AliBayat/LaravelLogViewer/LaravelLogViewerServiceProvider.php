@@ -21,16 +21,16 @@ class LaravelLogViewerServiceProvider extends ServiceProvider {
     public function boot()
     {
         if (method_exists($this, 'package')) {
-            $this->package('alibayat/laravel-log-viewer', 'laravel-log-viewer', __DIR__ . '/../../');
+            $this->package('alibayat/laravel-logviewer', 'laravel-logviewer', __DIR__ . '/../../');
         }
 
         if (method_exists($this, 'loadViewsFrom')) {
-            $this->loadViewsFrom(__DIR__.'/../../views', 'laravel-log-viewer');
+            $this->loadViewsFrom(__DIR__.'/../../views', 'laravel-logviewer');
         }
         
         if (method_exists($this, 'publishes')) {
             $this->publishes([
-                   __DIR__.'/../../views' => base_path('/resources/views/vendor/laravel-log-viewer'),
+                   __DIR__.'/../../views' => base_path('/resources/views/vendor/laravel-logviewer'),
             ], 'views');
             $this->publishes([
                 __DIR__.'/../../config/laravel-logviewer.php' => $this->config_path('laravel-logviewer.php'),
