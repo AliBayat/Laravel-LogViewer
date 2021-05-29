@@ -38,6 +38,7 @@ class LaravelLogViewer
      */
     private $pattern;
 
+
     /**
      * LaravelLogViewer constructor.
      */
