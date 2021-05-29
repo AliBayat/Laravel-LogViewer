@@ -16,6 +16,7 @@ if (class_exists("\\Illuminate\\Routing\\Controller")) {
  */
 class LogViewerController extends BaseController
 {
+
     /**
      * @var \Illuminate\Http\Request
      */
@@ -31,6 +32,7 @@ class LogViewerController extends BaseController
      */
     protected $view_log = 'laravel-log-viewer::log';
 
+
     /**
      * LogViewerController constructor.
      */
@@ -39,6 +41,7 @@ class LogViewerController extends BaseController
         $this->log_viewer = new LaravelLogViewer();
         $this->request = app('request');
     }
+
 
     /**
      * @return array|mixed
@@ -83,6 +86,7 @@ class LogViewerController extends BaseController
         return app('view')->make($this->view_log, $data);
     }
 
+
     /**
      * @return bool|mixed
      * @throws \Exception
@@ -113,6 +117,7 @@ class LogViewerController extends BaseController
         return false;
     }
 
+
     /**
      * @param string $input_string
      * @return string
@@ -122,6 +127,7 @@ class LogViewerController extends BaseController
     {
         return $this->log_viewer->pathToLogFile(Crypt::decrypt($this->request->input($input_string)));
     }
+
 
     /**
      * @param $to
@@ -135,6 +141,7 @@ class LogViewerController extends BaseController
 
         return app('redirect')->to($to);
     }
+
 
     /**
      * @param string $data
