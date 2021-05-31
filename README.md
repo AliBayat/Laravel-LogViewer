@@ -3,7 +3,8 @@
 Laravel Log Viewer
 ============
 
-This Package can be used to show laravel log files inside of a web page using Bootstrap and DataTables. it can be used with Laravel/Lumen 4.2+ all the way through to the last version.
+This Package can be used to show laravel log files inside of a web page using Bootstrap and DataTables. it can be used with Laravel/Lumen 4.2+ all the way through to the lastest versions.
+this package is a fork from the famous [Log-Viewer](https://github.com/rap2hpoutre/laravel-log-viewer) package with minor changes.
 
 
 ### Requirements
