@@ -31,6 +31,7 @@ class Pattern
         return array_keys($this->patterns);
     }
 
+
     /**
      * @param $pattern
      * @param null $position
