@@ -1,5 +1,5 @@
 {
-    "name": "alibayat/laravel-logviewer",
+    "name": "alibayat/laravel-log-viewer",
     "description": "Showing Laravel log files in a web page using dataTables",
     "license": "MIT",
     "keywords": ["Laravel", "Logs", "Log Viewer", "Laravel Log Viewer"],
