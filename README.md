@@ -16,7 +16,7 @@ this package is a fork from the famous [Log-Viewer](https://github.com/rap2hpout
 
 #### Composer Install:
 
-	composer require alibayat/laravel-logviewer
+	composer require alibayat/laravel-log-viewer
 
 #### Publish configuration:
 
